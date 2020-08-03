@@ -21,10 +21,9 @@ jobs:
                                 command: date
 
 workflows:
-        version: 2
         build_stuff:
                 jobs:
                   - build:
-                    context: 'Test Context'
+                      context: 'Test Context'
                   - print_date:
-                    context: MY_CONTEXT
+                      context: MY_CONTEXT
