@@ -1,11 +1,10 @@
-version: 2
+version: 2.1
 jobs:
         build:
                 docker:
                         - image: debian:stretch
-                context:
-                        - 'Test Context'
-                        - MY_CONTEXT
+                context: 'Test Context'
+                  #- MY_CONTEXT
                 steps:
                         - run:
                                 name: Sleep 1s
