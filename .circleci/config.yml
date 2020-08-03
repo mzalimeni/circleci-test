@@ -11,7 +11,7 @@ jobs:
                                 command: sleep 1s
                         - run:
                                 name: Greeting
-                                command: echo "dHello, world:_${testvar}!"
+                                command: echo "dHello, world:_${testvar}!!"
 
         print_date:
                 docker:
