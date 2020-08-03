@@ -3,13 +3,15 @@ jobs:
         build:
                 docker:
                         - image: debian:stretch
+                context:
+                        - 'Test Context'
                 steps:
                         - run:
                                 name: Sleep 15s
                                 command: sleep 15s
                         - run:
                                 name: Greeting
-                                command: echo "dHello, world!"
+                                command: echo "dHello, world:_${test var}!"
 
         print_date:
                 docker:
