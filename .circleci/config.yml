@@ -5,6 +5,7 @@ jobs:
                         - image: debian:stretch
                 context:
                         - 'Test Context'
+                        - MY_CONTEXT
                 steps:
                         - run:
                                 name: Sleep 1s
