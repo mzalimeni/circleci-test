@@ -3,7 +3,6 @@ jobs:
         build:
                 docker:
                         - image: debian:stretch
-                context: 'Test Context'
                 steps:
                         - run:
                                 name: Sleep 1s
