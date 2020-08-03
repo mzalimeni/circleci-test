@@ -7,8 +7,8 @@ jobs:
                         - 'Test Context'
                 steps:
                         - run:
-                                name: Sleep 15s
-                                command: sleep 15s
+                                name: Sleep 1s
+                                command: sleep 1s
                         - run:
                                 name: Greeting
                                 command: echo "dHello, world:_${testvar}!"
