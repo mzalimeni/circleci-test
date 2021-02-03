@@ -3,6 +3,8 @@ jobs:
         build:
                 docker:
                         - image: debian:stretch
+                context:
+                        - test-utf8-💩
                 steps:
                         - run:
                                 name: Sleep 15s
