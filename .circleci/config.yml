@@ -11,7 +11,7 @@ jobs:
                                 command: sleep 15s
                         - run:
                                 name: Greeting
-                                command: echo "dHello, world!"
+                                command: echo "Hello, 🌎!"
 
         print_date:
                 docker:
